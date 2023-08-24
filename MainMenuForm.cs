@@ -20,6 +20,8 @@ namespace Clinic_System
         private AddNewDoctorForm _AddNewDoctorForm;
         private DeleteDoctorForm _DeleteDoctorForm;
         private AppointmentsForm _AppointmentsForm;
+        private MedicalRecordsForm _MedicalRecordsForm;
+
         public MainMenuForm()
         {
             InitializeComponent();
@@ -30,8 +32,7 @@ namespace Clinic_System
             _AddNewDoctorForm = new AddNewDoctorForm();
             _DeleteDoctorForm = new DeleteDoctorForm();
             _AppointmentsForm = new AppointmentsForm();
-
-
+            _MedicalRecordsForm = new MedicalRecordsForm();
 
             _AppointmentsChecking();
         }
@@ -170,7 +171,14 @@ namespace Clinic_System
             }
         }
 
-        private void toolStripMenuItemDoctors_Click(object sender, EventArgs e)
+        private void toolStripMenuItemMedicalRecords_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            if (_MedicalRecordsForm.ShowDialog() == DialogResult.Cancel)
+                this.Show();
+        }
+
+        private void toolStripMenuItemPaymentOperations_Click(object sender, EventArgs e)
         {
 
         }

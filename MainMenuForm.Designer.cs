@@ -45,6 +45,7 @@
             this.deleteDoctorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemAppointments = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemMedicalRecords = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItemPaymentOperations = new System.Windows.Forms.ToolStripMenuItem();
             this.panelFooter = new System.Windows.Forms.Panel();
             this.lblFooter = new System.Windows.Forms.Label();
             this.panelTransactions = new System.Windows.Forms.Panel();
@@ -113,10 +114,11 @@
             this.patientsToolStripMenuItem,
             this.toolStripMenuItemDoctors,
             this.toolStripMenuItemAppointments,
-            this.toolStripMenuItemMedicalRecords});
+            this.toolStripMenuItemMedicalRecords,
+            this.toolStripMenuItemPaymentOperations});
             this.menuStrip.Location = new System.Drawing.Point(0, 103);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(176, 589);
+            this.menuStrip.Size = new System.Drawing.Size(211, 589);
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -130,7 +132,7 @@
             this.patientsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.patientsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 10, 0, 20);
             this.patientsToolStripMenuItem.Name = "patientsToolStripMenuItem";
-            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(163, 32);
+            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(194, 32);
             this.patientsToolStripMenuItem.Text = "Patients";
             // 
             // toolStripMenuItem3
@@ -167,15 +169,14 @@
             this.toolStripMenuItemDoctors.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItemDoctors.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.toolStripMenuItemDoctors.Name = "toolStripMenuItemDoctors";
-            this.toolStripMenuItemDoctors.Size = new System.Drawing.Size(163, 32);
+            this.toolStripMenuItemDoctors.Size = new System.Drawing.Size(194, 32);
             this.toolStripMenuItemDoctors.Text = "Doctors";
-            this.toolStripMenuItemDoctors.Click += new System.EventHandler(this.toolStripMenuItemDoctors_Click);
             // 
             // addDoctorToolStripMenuItem
             // 
             this.addDoctorToolStripMenuItem.Font = new System.Drawing.Font("Simple Indust Outline", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.addDoctorToolStripMenuItem.Name = "addDoctorToolStripMenuItem";
-            this.addDoctorToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.addDoctorToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
             this.addDoctorToolStripMenuItem.Text = "Add Doctor";
             this.addDoctorToolStripMenuItem.Click += new System.EventHandler(this.addDoctorToolStripMenuItem_Click);
             // 
@@ -183,7 +184,7 @@
             // 
             this.doctorsListToolStripMenuItem.Font = new System.Drawing.Font("Simple Indust Outline", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.doctorsListToolStripMenuItem.Name = "doctorsListToolStripMenuItem";
-            this.doctorsListToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.doctorsListToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
             this.doctorsListToolStripMenuItem.Text = "Doctors List";
             this.doctorsListToolStripMenuItem.Click += new System.EventHandler(this.doctorsListToolStripMenuItem_Click);
             // 
@@ -191,7 +192,7 @@
             // 
             this.deleteDoctorToolStripMenuItem.Font = new System.Drawing.Font("Simple Indust Outline", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.deleteDoctorToolStripMenuItem.Name = "deleteDoctorToolStripMenuItem";
-            this.deleteDoctorToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.deleteDoctorToolStripMenuItem.Size = new System.Drawing.Size(199, 28);
             this.deleteDoctorToolStripMenuItem.Text = "Delete Doctor";
             this.deleteDoctorToolStripMenuItem.Click += new System.EventHandler(this.deleteDoctorToolStripMenuItem_Click);
             // 
@@ -201,7 +202,7 @@
             this.toolStripMenuItemAppointments.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItemAppointments.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.toolStripMenuItemAppointments.Name = "toolStripMenuItemAppointments";
-            this.toolStripMenuItemAppointments.Size = new System.Drawing.Size(163, 32);
+            this.toolStripMenuItemAppointments.Size = new System.Drawing.Size(194, 32);
             this.toolStripMenuItemAppointments.Text = "Appointments";
             this.toolStripMenuItemAppointments.Click += new System.EventHandler(this.toolStripMenuItemAppointments_Click);
             // 
@@ -211,17 +212,28 @@
             this.toolStripMenuItemMedicalRecords.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItemMedicalRecords.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.toolStripMenuItemMedicalRecords.Name = "toolStripMenuItemMedicalRecords";
-            this.toolStripMenuItemMedicalRecords.Size = new System.Drawing.Size(163, 32);
+            this.toolStripMenuItemMedicalRecords.Size = new System.Drawing.Size(194, 32);
             this.toolStripMenuItemMedicalRecords.Text = "Medical Records";
+            this.toolStripMenuItemMedicalRecords.Click += new System.EventHandler(this.toolStripMenuItemMedicalRecords_Click);
+            // 
+            // toolStripMenuItemPaymentOperations
+            // 
+            this.toolStripMenuItemPaymentOperations.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.toolStripMenuItemPaymentOperations.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItemPaymentOperations.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.toolStripMenuItemPaymentOperations.Name = "toolStripMenuItemPaymentOperations";
+            this.toolStripMenuItemPaymentOperations.Size = new System.Drawing.Size(194, 32);
+            this.toolStripMenuItemPaymentOperations.Text = "Payment Operations";
+            this.toolStripMenuItemPaymentOperations.Click += new System.EventHandler(this.toolStripMenuItemPaymentOperations_Click);
             // 
             // panelFooter
             // 
             this.panelFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(181)))), ((int)(((byte)(246)))));
             this.panelFooter.Controls.Add(this.lblFooter);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(176, 589);
+            this.panelFooter.Location = new System.Drawing.Point(211, 589);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(1184, 103);
+            this.panelFooter.Size = new System.Drawing.Size(1149, 103);
             this.panelFooter.TabIndex = 3;
             // 
             // lblFooter
@@ -396,6 +408,7 @@
         private System.Windows.Forms.Panel panelFormHeader;
         private System.Windows.Forms.Label labelHeader;
         private System.Windows.Forms.PictureBox pictureBoxHeader;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemPaymentOperations;
     }
 }
 
