@@ -46,6 +46,7 @@
             this.lblTime = new System.Windows.Forms.Label();
             this.maskedTextBoxAppointmentTime = new System.Windows.Forms.MaskedTextBox();
             this.lblCautien = new System.Windows.Forms.Label();
+            this.lblGoBack = new System.Windows.Forms.Label();
             this.panelFormHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -200,6 +201,19 @@
             this.lblCautien.TabIndex = 11;
             this.lblCautien.Text = "Use The 24 Format Please";
             // 
+            // lblGoBack
+            // 
+            this.lblGoBack.AutoSize = true;
+            this.lblGoBack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblGoBack.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblGoBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGoBack.Location = new System.Drawing.Point(0, 103);
+            this.lblGoBack.Name = "lblGoBack";
+            this.lblGoBack.Size = new System.Drawing.Size(93, 28);
+            this.lblGoBack.TabIndex = 12;
+            this.lblGoBack.Text = "Go Back";
+            this.lblGoBack.Click += new System.EventHandler(this.lblGoBack_Click);
+            // 
             // AddNewAppointmentForm
             // 
             this.AcceptButton = this.btnSave;
@@ -208,6 +222,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(1389, 579);
+            this.Controls.Add(this.lblGoBack);
             this.Controls.Add(this.lblCautien);
             this.Controls.Add(this.maskedTextBoxAppointmentTime);
             this.Controls.Add(this.lblTime);
@@ -251,5 +266,6 @@
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxAppointmentTime;
         private System.Windows.Forms.Label lblCautien;
+        private System.Windows.Forms.Label lblGoBack;
     }
 }

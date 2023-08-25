@@ -42,6 +42,7 @@
             this.labelHeader = new System.Windows.Forms.Label();
             this.pictureBoxHeader = new System.Windows.Forms.PictureBox();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblGoBack = new System.Windows.Forms.Label();
             this.groupBoxPatientInfo.SuspendLayout();
             this.panelFormHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
@@ -133,7 +134,7 @@
             this.textBoxSearch.Location = new System.Drawing.Point(628, 137);
             this.textBoxSearch.MinimumSize = new System.Drawing.Size(4, 35);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(367, 35);
+            this.textBoxSearch.Size = new System.Drawing.Size(367, 24);
             this.textBoxSearch.TabIndex = 13;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
@@ -185,12 +186,26 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // lblGoBack
+            // 
+            this.lblGoBack.AutoSize = true;
+            this.lblGoBack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblGoBack.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblGoBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGoBack.Location = new System.Drawing.Point(0, 103);
+            this.lblGoBack.Name = "lblGoBack";
+            this.lblGoBack.Size = new System.Drawing.Size(93, 28);
+            this.lblGoBack.TabIndex = 18;
+            this.lblGoBack.Text = "Go Back";
+            this.lblGoBack.Click += new System.EventHandler(this.lblGoBack_Click);
+            // 
             // DeleteDoctorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1351, 636);
+            this.Controls.Add(this.lblGoBack);
             this.Controls.Add(this.btnPatientsList);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDelete);
@@ -226,5 +241,6 @@
         private System.Windows.Forms.Label labelHeader;
         private System.Windows.Forms.PictureBox pictureBoxHeader;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label lblGoBack;
     }
 }

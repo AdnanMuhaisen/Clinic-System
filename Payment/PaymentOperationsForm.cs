@@ -15,11 +15,13 @@ namespace Clinic_System.Payment
     public partial class PaymentOperationsForm : BaseForm
     {
         private AddNewBillForm _AddNewBillForm;
+        private DeleteABillForm _DeleteABillForm;
 
         public PaymentOperationsForm()
         {
             InitializeComponent();
             _AddNewBillForm = new AddNewBillForm();
+            _DeleteABillForm = new DeleteABillForm();
         }
 
         private void PaymentOperationsForm_Load(object sender, EventArgs e)
@@ -38,14 +40,13 @@ namespace Clinic_System.Payment
             _UpdateBillsGrid();
         }
 
-        private void toolStripMenuItemUpdateBillDetails_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void toolStripMenuItemDeleteABill_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            if (_DeleteABillForm.ShowDialog() == DialogResult.Cancel)
+                this.Show();
+            _UpdateBillsGrid();
         }
+
     }
 }

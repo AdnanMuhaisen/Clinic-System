@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Clinic_System.Payment;
 using Clinic_System___Middle_Layer;
 
 
@@ -21,6 +22,7 @@ namespace Clinic_System
         private DeleteDoctorForm _DeleteDoctorForm;
         private AppointmentsForm _AppointmentsForm;
         private MedicalRecordsForm _MedicalRecordsForm;
+        private PaymentOperationsForm _PaymentOperationsForm;
 
         public MainMenuForm()
         {
@@ -33,6 +35,7 @@ namespace Clinic_System
             _DeleteDoctorForm = new DeleteDoctorForm();
             _AppointmentsForm = new AppointmentsForm();
             _MedicalRecordsForm = new MedicalRecordsForm();
+            _PaymentOperationsForm = new PaymentOperationsForm();
 
             _AppointmentsChecking();
         }
@@ -41,8 +44,8 @@ namespace Clinic_System
         {
             lblDate.Text += DateTime.Now.ToShortDateString();
             lblTime.Text = string.Concat("Time :  ", DateTime.Now.ToShortTimeString());
-            lblLastTransactionContent.Text = clsTransactions.ReadLastLineFromFile(clsTransactions.eFiles.TransactionsFile);
-            lblNotificationContent.Text = clsTransactions.ReadLastLineFromFile(clsTransactions.eFiles.AppointmentsFile);
+            _UpdateTransactionLabel();
+            _UpdateNotificationsLabel();
         }
 
         private void timerUpdateTime_Tick(object sender, EventArgs e)
@@ -101,7 +104,12 @@ namespace Clinic_System
         }
 
         private void _UpdateNotificationsLabel()
-            => lblNotificationContent.Text = clsTransactions.ReadLastLineFromFile(clsTransactions.eFiles.AppointmentsFile);
+        {
+            lblNotificationContent.Text =
+                string.Concat(clsTransactions.ReadLastLineFromFile(clsTransactions.eFiles.AppointmentsFile), "\n",
+                clsTransactions.ReadLastLineFromFile(clsTransactions.eFiles.MedicalRecordsFile), "\n",
+                clsTransactions.ReadLastLineFromFile(clsTransactions.eFiles.BillsFile), "\n");
+        }
 
         private void toolStripMenuItemAppointments_Click(object sender, EventArgs e)
         {
@@ -113,7 +121,6 @@ namespace Clinic_System
 
         private void timerForAppointmentsChecking_Tick(object sender, EventArgs e)
         {
-
             _AppointmentsChecking();
         }
 
@@ -176,11 +183,16 @@ namespace Clinic_System
             this.Hide();
             if (_MedicalRecordsForm.ShowDialog() == DialogResult.Cancel)
                 this.Show();
+            _UpdateNotificationsLabel();
         }
 
         private void toolStripMenuItemPaymentOperations_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            if (_PaymentOperationsForm.ShowDialog() == DialogResult.Cancel)
+                this.Show();
+            _UpdateNotificationsLabel();
         }
+
     }
 }

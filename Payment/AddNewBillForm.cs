@@ -141,6 +141,11 @@ namespace Clinic_System.Payment
             return true;
         }
 
+        private void lblGoBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private int _GetNumberFromFromComboBoxItem(ComboBox Cb)
          => int.Parse(Cb.SelectedItem.ToString().Substring(0, Cb.SelectedItem.ToString().IndexOf(" ")));
 

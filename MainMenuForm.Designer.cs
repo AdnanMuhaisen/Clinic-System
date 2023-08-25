@@ -118,7 +118,7 @@
             this.toolStripMenuItemPaymentOperations});
             this.menuStrip.Location = new System.Drawing.Point(0, 103);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(211, 589);
+            this.menuStrip.Size = new System.Drawing.Size(209, 589);
             this.menuStrip.TabIndex = 2;
             this.menuStrip.Text = "menuStrip1";
             // 
@@ -132,7 +132,7 @@
             this.patientsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.patientsToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 10, 0, 20);
             this.patientsToolStripMenuItem.Name = "patientsToolStripMenuItem";
-            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(194, 32);
+            this.patientsToolStripMenuItem.Size = new System.Drawing.Size(196, 32);
             this.patientsToolStripMenuItem.Text = "Patients";
             // 
             // toolStripMenuItem3
@@ -169,7 +169,7 @@
             this.toolStripMenuItemDoctors.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItemDoctors.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.toolStripMenuItemDoctors.Name = "toolStripMenuItemDoctors";
-            this.toolStripMenuItemDoctors.Size = new System.Drawing.Size(194, 32);
+            this.toolStripMenuItemDoctors.Size = new System.Drawing.Size(196, 32);
             this.toolStripMenuItemDoctors.Text = "Doctors";
             // 
             // addDoctorToolStripMenuItem
@@ -202,7 +202,7 @@
             this.toolStripMenuItemAppointments.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItemAppointments.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.toolStripMenuItemAppointments.Name = "toolStripMenuItemAppointments";
-            this.toolStripMenuItemAppointments.Size = new System.Drawing.Size(194, 32);
+            this.toolStripMenuItemAppointments.Size = new System.Drawing.Size(196, 32);
             this.toolStripMenuItemAppointments.Text = "Appointments";
             this.toolStripMenuItemAppointments.Click += new System.EventHandler(this.toolStripMenuItemAppointments_Click);
             // 
@@ -212,7 +212,7 @@
             this.toolStripMenuItemMedicalRecords.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItemMedicalRecords.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.toolStripMenuItemMedicalRecords.Name = "toolStripMenuItemMedicalRecords";
-            this.toolStripMenuItemMedicalRecords.Size = new System.Drawing.Size(194, 32);
+            this.toolStripMenuItemMedicalRecords.Size = new System.Drawing.Size(196, 32);
             this.toolStripMenuItemMedicalRecords.Text = "Medical Records";
             this.toolStripMenuItemMedicalRecords.Click += new System.EventHandler(this.toolStripMenuItemMedicalRecords_Click);
             // 
@@ -222,7 +222,7 @@
             this.toolStripMenuItemPaymentOperations.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.toolStripMenuItemPaymentOperations.Margin = new System.Windows.Forms.Padding(0, 0, 0, 20);
             this.toolStripMenuItemPaymentOperations.Name = "toolStripMenuItemPaymentOperations";
-            this.toolStripMenuItemPaymentOperations.Size = new System.Drawing.Size(194, 32);
+            this.toolStripMenuItemPaymentOperations.Size = new System.Drawing.Size(196, 32);
             this.toolStripMenuItemPaymentOperations.Text = "Payment Operations";
             this.toolStripMenuItemPaymentOperations.Click += new System.EventHandler(this.toolStripMenuItemPaymentOperations_Click);
             // 
@@ -231,9 +231,9 @@
             this.panelFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(181)))), ((int)(((byte)(246)))));
             this.panelFooter.Controls.Add(this.lblFooter);
             this.panelFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelFooter.Location = new System.Drawing.Point(211, 589);
+            this.panelFooter.Location = new System.Drawing.Point(209, 589);
             this.panelFooter.Name = "panelFooter";
-            this.panelFooter.Size = new System.Drawing.Size(1149, 103);
+            this.panelFooter.Size = new System.Drawing.Size(1151, 103);
             this.panelFooter.TabIndex = 3;
             // 
             // lblFooter
@@ -251,18 +251,18 @@
             // 
             this.panelTransactions.Controls.Add(this.lblLastTransactionContent);
             this.panelTransactions.Controls.Add(this.lblLastTransaction);
-            this.panelTransactions.Location = new System.Drawing.Point(220, 354);
+            this.panelTransactions.Location = new System.Drawing.Point(220, 394);
             this.panelTransactions.Name = "panelTransactions";
-            this.panelTransactions.Size = new System.Drawing.Size(800, 205);
+            this.panelTransactions.Size = new System.Drawing.Size(800, 165);
             this.panelTransactions.TabIndex = 4;
             // 
             // lblLastTransactionContent
             // 
             this.lblLastTransactionContent.Font = new System.Drawing.Font("Simple Indust Outline", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblLastTransactionContent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblLastTransactionContent.Location = new System.Drawing.Point(23, 87);
+            this.lblLastTransactionContent.Location = new System.Drawing.Point(22, 66);
             this.lblLastTransactionContent.Name = "lblLastTransactionContent";
-            this.lblLastTransactionContent.Size = new System.Drawing.Size(759, 92);
+            this.lblLastTransactionContent.Size = new System.Drawing.Size(759, 85);
             this.lblLastTransactionContent.TabIndex = 3;
             this.lblLastTransactionContent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -271,7 +271,7 @@
             this.lblLastTransaction.AutoSize = true;
             this.lblLastTransaction.Font = new System.Drawing.Font("Simple Indust Outline", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblLastTransaction.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblLastTransaction.Location = new System.Drawing.Point(23, 22);
+            this.lblLastTransaction.Location = new System.Drawing.Point(23, 17);
             this.lblLastTransaction.Name = "lblLastTransaction";
             this.lblLastTransaction.Size = new System.Drawing.Size(216, 33);
             this.lblLastTransaction.TabIndex = 2;
@@ -283,16 +283,16 @@
             this.panel1.Controls.Add(this.lblNotification);
             this.panel1.Location = new System.Drawing.Point(220, 118);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 205);
+            this.panel1.Size = new System.Drawing.Size(800, 230);
             this.panel1.TabIndex = 5;
             // 
             // lblNotificationContent
             // 
             this.lblNotificationContent.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.lblNotificationContent.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblNotificationContent.Location = new System.Drawing.Point(23, 87);
+            this.lblNotificationContent.Location = new System.Drawing.Point(23, 65);
             this.lblNotificationContent.Name = "lblNotificationContent";
-            this.lblNotificationContent.Size = new System.Drawing.Size(759, 92);
+            this.lblNotificationContent.Size = new System.Drawing.Size(759, 165);
             this.lblNotificationContent.TabIndex = 3;
             this.lblNotificationContent.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 

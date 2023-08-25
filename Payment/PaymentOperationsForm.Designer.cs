@@ -31,7 +31,6 @@
             this.dataGridViewBills = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.newBillToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItemUpdateBillDetails = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItemDeleteABill = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBills)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -59,7 +58,6 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newBillToolStripMenuItem,
-            this.toolStripMenuItemUpdateBillDetails,
             this.toolStripMenuItemDeleteABill});
             this.menuStrip1.Location = new System.Drawing.Point(0, 103);
             this.menuStrip1.Name = "menuStrip1";
@@ -75,15 +73,6 @@
             this.newBillToolStripMenuItem.Size = new System.Drawing.Size(84, 28);
             this.newBillToolStripMenuItem.Text = "New Bill";
             this.newBillToolStripMenuItem.Click += new System.EventHandler(this.newBillToolStripMenuItem_Click);
-            // 
-            // toolStripMenuItemUpdateBillDetails
-            // 
-            this.toolStripMenuItemUpdateBillDetails.Font = new System.Drawing.Font("Simple Indust Outline", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.toolStripMenuItemUpdateBillDetails.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.toolStripMenuItemUpdateBillDetails.Name = "toolStripMenuItemUpdateBillDetails";
-            this.toolStripMenuItemUpdateBillDetails.Size = new System.Drawing.Size(160, 28);
-            this.toolStripMenuItemUpdateBillDetails.Text = "Update Bill Details";
-            this.toolStripMenuItemUpdateBillDetails.Click += new System.EventHandler(this.toolStripMenuItemUpdateBillDetails_Click);
             // 
             // toolStripMenuItemDeleteABill
             // 
@@ -120,7 +109,6 @@
         private System.Windows.Forms.DataGridView dataGridViewBills;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem newBillToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemUpdateBillDetails;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItemDeleteABill;
     }
 }

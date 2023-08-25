@@ -37,6 +37,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.addNewAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deleteAnAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panelFormHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewAppointments)).BeginInit();
@@ -111,7 +112,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addNewAppointmentToolStripMenuItem,
-            this.deleteAnAppointmentToolStripMenuItem});
+            this.deleteAnAppointmentToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 103);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1380, 32);
@@ -135,6 +137,15 @@
             this.deleteAnAppointmentToolStripMenuItem.Size = new System.Drawing.Size(192, 28);
             this.deleteAnAppointmentToolStripMenuItem.Text = "Delete An Appointment";
             this.deleteAnAppointmentToolStripMenuItem.Click += new System.EventHandler(this.deleteAnAppointmentToolStripMenuItem_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Simple Indust Outline", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.toolStripMenuItem1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(232, 28);
+            this.toolStripMenuItem1.Text = "Update A Pined Appointment";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // AppointmentsForm
             // 
@@ -170,5 +181,6 @@
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem addNewAppointmentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem deleteAnAppointmentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
     }
 }

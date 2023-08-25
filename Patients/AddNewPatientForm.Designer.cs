@@ -58,6 +58,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblGoBack = new System.Windows.Forms.Label();
             this.panelFormHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
             this.panelCollectData.SuspendLayout();
@@ -359,6 +360,19 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // lblGoBack
+            // 
+            this.lblGoBack.AutoSize = true;
+            this.lblGoBack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblGoBack.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblGoBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGoBack.Location = new System.Drawing.Point(0, 103);
+            this.lblGoBack.Name = "lblGoBack";
+            this.lblGoBack.Size = new System.Drawing.Size(93, 28);
+            this.lblGoBack.TabIndex = 13;
+            this.lblGoBack.Text = "Go Back";
+            this.lblGoBack.Click += new System.EventHandler(this.lblGoBack_Click);
+            // 
             // AddNewPatientForm
             // 
             this.AcceptButton = this.btnSave;
@@ -367,6 +381,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(1356, 735);
+            this.Controls.Add(this.lblGoBack);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
@@ -386,6 +401,7 @@
             this.groupBoxGender.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -419,5 +435,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label lblUserID;
+        private System.Windows.Forms.Label lblGoBack;
     }
 }

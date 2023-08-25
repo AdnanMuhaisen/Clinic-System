@@ -89,9 +89,9 @@ namespace Clinic_System
             }
         }
 
-        private void comboBoxAppointments_SelectedIndexChanged(object sender, EventArgs e)
+        private void lblGoBack_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private bool _IsFormDataAreFilled()

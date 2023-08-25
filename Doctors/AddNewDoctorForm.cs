@@ -135,5 +135,10 @@ namespace Clinic_System
                         MessageBoxIcon.Error);
             }
         }
+
+        private void lblGoBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

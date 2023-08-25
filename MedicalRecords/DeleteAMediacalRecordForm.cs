@@ -85,5 +85,10 @@ namespace Clinic_System
             btnDelete.Visible = btnClose.Visible = false ;
             comboBoxRecordsID.SelectedIndex = -1;
         }
+
+        private void lblGoBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

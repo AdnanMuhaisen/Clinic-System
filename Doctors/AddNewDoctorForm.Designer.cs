@@ -33,6 +33,8 @@
             this.labelHeader = new System.Windows.Forms.Label();
             this.pictureBoxHeader = new System.Windows.Forms.PictureBox();
             this.panelCollectData = new System.Windows.Forms.Panel();
+            this.textBoxSpecialization = new System.Windows.Forms.TextBox();
+            this.lblSpecialization = new System.Windows.Forms.Label();
             this.groupBoxContactInfo = new System.Windows.Forms.GroupBox();
             this.lblPhoneNumber = new System.Windows.Forms.Label();
             this.textBoxPhoneNumber = new System.Windows.Forms.TextBox();
@@ -52,11 +54,10 @@
             this.lblFirstName = new System.Windows.Forms.Label();
             this.textBoxPersonID = new System.Windows.Forms.TextBox();
             this.lblPersonID = new System.Windows.Forms.Label();
-            this.textBoxSpecialization = new System.Windows.Forms.TextBox();
-            this.lblSpecialization = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
+            this.lblGoBack = new System.Windows.Forms.Label();
             this.panelFormHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
             this.panelCollectData.SuspendLayout();
@@ -117,6 +118,24 @@
             this.panelCollectData.Name = "panelCollectData";
             this.panelCollectData.Size = new System.Drawing.Size(1207, 407);
             this.panelCollectData.TabIndex = 3;
+            // 
+            // textBoxSpecialization
+            // 
+            this.textBoxSpecialization.Location = new System.Drawing.Point(216, 261);
+            this.textBoxSpecialization.Name = "textBoxSpecialization";
+            this.textBoxSpecialization.Size = new System.Drawing.Size(221, 24);
+            this.textBoxSpecialization.TabIndex = 18;
+            // 
+            // lblSpecialization
+            // 
+            this.lblSpecialization.AutoSize = true;
+            this.lblSpecialization.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblSpecialization.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblSpecialization.Location = new System.Drawing.Point(53, 261);
+            this.lblSpecialization.Name = "lblSpecialization";
+            this.lblSpecialization.Size = new System.Drawing.Size(157, 28);
+            this.lblSpecialization.TabIndex = 17;
+            this.lblSpecialization.Text = "Specialization :";
             // 
             // groupBoxContactInfo
             // 
@@ -311,24 +330,6 @@
             this.lblPersonID.TabIndex = 2;
             this.lblPersonID.Text = "Person ID :";
             // 
-            // textBoxSpecialization
-            // 
-            this.textBoxSpecialization.Location = new System.Drawing.Point(216, 261);
-            this.textBoxSpecialization.Name = "textBoxSpecialization";
-            this.textBoxSpecialization.Size = new System.Drawing.Size(221, 24);
-            this.textBoxSpecialization.TabIndex = 18;
-            // 
-            // lblSpecialization
-            // 
-            this.lblSpecialization.AutoSize = true;
-            this.lblSpecialization.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.lblSpecialization.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblSpecialization.Location = new System.Drawing.Point(53, 261);
-            this.lblSpecialization.Name = "lblSpecialization";
-            this.lblSpecialization.Size = new System.Drawing.Size(157, 28);
-            this.lblSpecialization.TabIndex = 17;
-            this.lblSpecialization.Text = "Specialization :";
-            // 
             // btnClose
             // 
             this.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel;
@@ -360,12 +361,26 @@
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
+            // lblGoBack
+            // 
+            this.lblGoBack.AutoSize = true;
+            this.lblGoBack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblGoBack.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblGoBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGoBack.Location = new System.Drawing.Point(0, 103);
+            this.lblGoBack.Name = "lblGoBack";
+            this.lblGoBack.Size = new System.Drawing.Size(93, 28);
+            this.lblGoBack.TabIndex = 13;
+            this.lblGoBack.Text = "Go Back";
+            this.lblGoBack.Click += new System.EventHandler(this.lblGoBack_Click);
+            // 
             // AddNewDoctorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.ClientSize = new System.Drawing.Size(1391, 735);
+            this.Controls.Add(this.lblGoBack);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
@@ -384,6 +399,7 @@
             this.groupBoxGender.ResumeLayout(false);
             this.groupBoxGender.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -417,5 +433,6 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Label lblGoBack;
     }
 }

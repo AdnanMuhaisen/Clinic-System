@@ -81,5 +81,10 @@ namespace Clinic_System
             if (_PatientsListForm.ShowDialog() == DialogResult.Cancel)
                 this.Show();
         }
+
+        private void lblGoBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

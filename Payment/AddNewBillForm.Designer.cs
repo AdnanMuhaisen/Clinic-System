@@ -43,6 +43,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.lblGoBack = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,6 +178,19 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // lblGoBack
+            // 
+            this.lblGoBack.AutoSize = true;
+            this.lblGoBack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblGoBack.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblGoBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGoBack.Location = new System.Drawing.Point(0, 103);
+            this.lblGoBack.Name = "lblGoBack";
+            this.lblGoBack.Size = new System.Drawing.Size(93, 28);
+            this.lblGoBack.TabIndex = 16;
+            this.lblGoBack.Text = "Go Back";
+            this.lblGoBack.Click += new System.EventHandler(this.lblGoBack_Click);
+            // 
             // AddNewBillForm
             // 
             this.AcceptButton = this.btnSave;
@@ -184,6 +198,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(1382, 681);
+            this.Controls.Add(this.lblGoBack);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnSave);
@@ -213,6 +228,7 @@
             this.Controls.SetChildIndex(this.btnSave, 0);
             this.Controls.SetChildIndex(this.btnClear, 0);
             this.Controls.SetChildIndex(this.btnClose, 0);
+            this.Controls.SetChildIndex(this.lblGoBack, 0);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -235,5 +251,6 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Label lblGoBack;
     }
 }

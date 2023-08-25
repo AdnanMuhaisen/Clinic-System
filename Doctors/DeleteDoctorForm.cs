@@ -81,5 +81,10 @@ namespace Clinic_System
                 MessageBox.Show("An Error Occuer When Try To Delete This Doctor !", "Error Message",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void lblGoBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

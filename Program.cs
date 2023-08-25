@@ -1,4 +1,5 @@
-﻿using Clinic_System.Payment;
+﻿using Clinic_System.Appointments;
+using Clinic_System.Payment;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace Clinic_System
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PaymentOperationsForm());
+            Application.Run(new MainMenuForm());
         }
     }
 }

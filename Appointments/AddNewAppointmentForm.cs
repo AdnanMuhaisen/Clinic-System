@@ -125,7 +125,11 @@ namespace Clinic_System
         private bool _IsAppointmentTimeDoesNotConflect()
             => _IsAppointmentTimeDoesNotConflectDoctorAppointments() &&
                 _IsAppointmentTimeDoesNotConflectPatientAppointments();
-        
+
+        private void lblGoBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         private bool _IsAppointmentTimeDoesNotConflectDoctorAppointments()
         {

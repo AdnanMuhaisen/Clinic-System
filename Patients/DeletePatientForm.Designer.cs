@@ -42,6 +42,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.Button();
             this.btnPatientsList = new System.Windows.Forms.Button();
+            this.lblGoBack = new System.Windows.Forms.Label();
             this.panelFormHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxHeader)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -86,7 +87,7 @@
             this.textBoxSearch.Location = new System.Drawing.Point(663, 158);
             this.textBoxSearch.MinimumSize = new System.Drawing.Size(4, 35);
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(367, 35);
+            this.textBoxSearch.Size = new System.Drawing.Size(367, 24);
             this.textBoxSearch.TabIndex = 6;
             this.textBoxSearch.TextChanged += new System.EventHandler(this.textBoxSearch_TextChanged);
             // 
@@ -112,7 +113,7 @@
             this.lblPersonID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPersonID.Location = new System.Drawing.Point(33, 42);
             this.lblPersonID.Name = "lblPersonID";
-            this.lblPersonID.Size = new System.Drawing.Size(120, 28);
+            this.lblPersonID.Size = new System.Drawing.Size(116, 28);
             this.lblPersonID.TabIndex = 6;
             this.lblPersonID.Text = "Person ID :";
             // 
@@ -123,7 +124,7 @@
             this.lblPatientID.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPatientID.Location = new System.Drawing.Point(554, 42);
             this.lblPatientID.Name = "lblPatientID";
-            this.lblPatientID.Size = new System.Drawing.Size(125, 28);
+            this.lblPatientID.Size = new System.Drawing.Size(120, 28);
             this.lblPatientID.TabIndex = 7;
             this.lblPatientID.Text = "Patient ID : ";
             // 
@@ -185,6 +186,19 @@
             this.btnPatientsList.UseVisualStyleBackColor = true;
             this.btnPatientsList.Click += new System.EventHandler(this.btnPatientsList_Click);
             // 
+            // lblGoBack
+            // 
+            this.lblGoBack.AutoSize = true;
+            this.lblGoBack.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblGoBack.Font = new System.Drawing.Font("Simple Indust Outline", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.lblGoBack.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblGoBack.Location = new System.Drawing.Point(0, 103);
+            this.lblGoBack.Name = "lblGoBack";
+            this.lblGoBack.Size = new System.Drawing.Size(93, 28);
+            this.lblGoBack.TabIndex = 13;
+            this.lblGoBack.Text = "Go Back";
+            this.lblGoBack.Click += new System.EventHandler(this.lblGoBack_Click);
+            // 
             // DeletePatientForm
             // 
             this.AcceptButton = this.btnDelete;
@@ -193,6 +207,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
             this.CancelButton = this.btnClose;
             this.ClientSize = new System.Drawing.Size(1396, 676);
+            this.Controls.Add(this.lblGoBack);
             this.Controls.Add(this.btnPatientsList);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDelete);
@@ -228,5 +243,6 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnPatientsList;
+        private System.Windows.Forms.Label lblGoBack;
     }
 }

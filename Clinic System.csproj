@@ -12,6 +12,21 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -54,6 +69,18 @@
     </Compile>
     <Compile Include="Appointments\AddNewAppointmentForm.Designer.cs">
       <DependentUpon>AddNewAppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\DeleteAnAppointmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\DeleteAnAppointmentForm.Designer.cs">
+      <DependentUpon>DeleteAnAppointmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Appointments\UpdateAnAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Appointments\UpdateAnAppointment.Designer.cs">
+      <DependentUpon>UpdateAnAppointment.cs</DependentUpon>
     </Compile>
     <Compile Include="Doctors\AddNewDoctorForm.cs">
       <SubType>Form</SubType>
@@ -115,6 +142,12 @@
     <Compile Include="Payment\AddNewBillForm.Designer.cs">
       <DependentUpon>AddNewBillForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Payment\DeleteABill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment\DeleteABill.Designer.cs">
+      <DependentUpon>DeleteABill.cs</DependentUpon>
+    </Compile>
     <Compile Include="Payment\PaymentOperationsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -156,6 +189,12 @@
     <EmbeddedResource Include="Appointments\AddNewAppointmentForm.resx">
       <DependentUpon>AddNewAppointmentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\DeleteAnAppointmentForm.resx">
+      <DependentUpon>DeleteAnAppointmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Appointments\UpdateAnAppointment.resx">
+      <DependentUpon>UpdateAnAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Doctors\AddNewDoctorForm.resx">
       <DependentUpon>AddNewDoctorForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -185,6 +224,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payment\AddNewBillForm.resx">
       <DependentUpon>AddNewBillForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment\DeleteABill.resx">
+      <DependentUpon>DeleteABill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payment\PaymentOperationsForm.resx">
       <DependentUpon>PaymentOperationsForm.cs</DependentUpon>
@@ -230,6 +272,17 @@
   <ItemGroup>
     <None Include="Resources\Photo.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

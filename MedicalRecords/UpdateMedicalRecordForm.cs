@@ -121,6 +121,11 @@ namespace Clinic_System
             textBoxVisitDescription.Text = textBoxDiagnosis.Text = textBoxAdditionalNotes.Text = string.Empty;
         }
 
+        private void lblGoBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void _IsUpdateFormControlsVisible(bool Visible)
         {
             panelUpdateRecord.Visible = Visible;
